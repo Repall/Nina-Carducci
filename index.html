@@ -48,9 +48,11 @@
     <title>Nina Carducci - Photographe</title>
     <meta name="description" content="Photographe spécialisée dans les concerts, l'entreprise, le mariage, et le portrait. Découvrez mon portfolio et mes services." />
     <link rel="preload" href="./assets/images/slider/ryoji-iwata.webp" as="image" />
+
+
   </head>
   <body>
-    <div class="top-header">
+    <header class="top-header">
       <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
@@ -60,65 +62,66 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"
-              ><img width="20" height="20" src="assets/images/instagram.png" alt="logo instagram"
+              ><img width="20" height="20" src="assets/images/instagram.png" title="Mon Instagram" alt="logo instagram"
             /></a>
           </li>
         </ul>
       </div>
-    </div>
-    <div id="header">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
+    </header>
+    <main>
+
+      <section id="header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
             aria-label="Slide 1"
-          ></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source srcset="./assets/images/slider/ryoji-iwata.webp" type="image/webp" />
+                <img src="./assets/images/slider/ryoji-iwata.jpg" class="d-block w-100" alt="image carousel" loading="eager" />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source srcset="./assets/images/slider/nicholas-green.webp" type="image/webp" />
+                <img src="./assets/images/slider/nicholas-green.jpg" class="d-block w-100" alt="image carousel" loading="lazy" />
+              </picture>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source srcset="./assets/images/slider/edward-cisneros.webp" type="image/webp" />
+                <img src="./assets/images/slider/edward-cisneros.jpg" class="d-block w-100" alt="image carousel" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <picture>
-              <source srcset="./assets/images/slider/ryoji-iwata.webp" type="image/webp" />
-              <img src="./assets/images/slider/ryoji-iwata.jpg" class="d-block w-100" alt="image carousel" loading="eager" />
-            </picture>
-          </div>
-          <div class="carousel-item">
-            <picture>
-              <source srcset="./assets/images/slider/nicholas-green.webp" type="image/webp" />
-              <img src="./assets/images/slider/nicholas-green.jpg" class="d-block w-100" alt="image carousel" loading="lazy" />
-            </picture>
-          </div>
-          <div class="carousel-item">
-            <picture>
-              <source srcset="./assets/images/slider/edward-cisneros.webp" type="image/webp" />
-              <img src="./assets/images/slider/edward-cisneros.jpg" class="d-block w-100" alt="image carousel" loading="lazy" />
-            </picture>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <div id="about">
+      </section>
+      <section id="about">
       <div class="picture left">
         <picture class="">
           <source srcset="./assets/images/nina.webp" type="image/webp" />
           <img
-            src="./assets/images/nina.png"
-            loading="lazy"
-            alt="Photo Nina Carducci"
-            sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 360px"
+          src="./assets/images/nina.png"
+          loading="lazy"
+          alt="Photo Nina Carducci"
           />
         </picture>
       </div>
@@ -136,98 +139,98 @@
           photos.
         </p>
       </div>
-    </div>
-    <div id="gallery">
+    </section>
+    <section id="gallery">
       <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <picture class="gallery-item">
             <source srcset="./assets/images/gallery/concerts/aaron-paul.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Concert"
-              alt="photo 1 concert"
-              class="gallery-items"
-              src="./assets/images/gallery/concerts/aaron-paul.jpg"
-              loading="lazy"
+            width="380"
+            height="380"
+            data-gallery-tag="Concert"
+            alt="photo 1 concert"
+            class="gallery-items"
+            src="./assets/images/gallery/concerts/aaron-paul.jpg"
+            loading="lazy"
             />
           </picture>
           <picture class="gallery-item">
             <source srcset="./assets/images/gallery/entreprise/ali-morshedlou.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Entreprises"
-              alt="photo 2 entreprise"
-              class="gallery-items"
-              src="./assets/images/gallery/entreprise/ali-morshedlou.jpg"
-              loading="lazy"
+            width="380"
+            height="380"
+            data-gallery-tag="Entreprises"
+            alt="photo 2 entreprise"
+            class="gallery-items"
+            src="./assets/images/gallery/entreprise/ali-morshedlou.jpg"
+            loading="lazy"
             />
           </picture>
           <picture class="gallery-item">
             <source srcset="./assets/images/gallery/entreprise/jason-goodman.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Entreprises"
-              alt="photo 3 entreprise"
-              class="gallery-items"
-              src="./assets/images/gallery/entreprise/jason-goodman.jpg"
-              loading="lazy"
+            width="380"
+            height="380"
+            data-gallery-tag="Entreprises"
+            alt="photo 3 entreprise"
+            class="gallery-items"
+            src="./assets/images/gallery/entreprise/jason-goodman.jpg"
+            loading="lazy"
             />
           </picture>
           <picture class="gallery-item">
             <source srcset="./assets/images/gallery/mariage/hannah-busing.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Mariages"
-              alt="photo 4 mariage"
-              class="gallery-items"
-              src="./assets/images/gallery/mariage/hannah-busing.jpg"
-              loading="lazy"
+            width="380"
+            height="380"
+            data-gallery-tag="Mariages"
+            alt="photo 4 mariage"
+            class="gallery-items"
+            src="./assets/images/gallery/mariage/hannah-busing.jpg"
+            loading="lazy"
             />
           </picture>
           <picture class="gallery-item">
             <source srcset="./assets/images/gallery/portraits/ade-tunji.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Portrait"
-              alt="photo 5 portrait"
-              class="gallery-items"
-              src="./assets/images/gallery/portraits/ade-tunji.jpg"
-              loading="lazy"
+            width="380"
+            height="380"
+            data-gallery-tag="Portrait"
+            alt="photo 5 portrait"
+            class="gallery-items"
+            src="./assets/images/gallery/portraits/ade-tunji.jpg"
+            loading="lazy"
             />
           </picture>
           <picture class="gallery-item">
             <source srcset="./assets/images/gallery/mariage/jakob-owens.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Mariages"
-              alt="photo 6 mariage"
-              class="gallery-items"
-              src="./assets/images/gallery/mariage/jakob-owens.jpg"
-              loading="lazy"
+            width="380"
+            height="380"
+            data-gallery-tag="Mariages"
+            alt="photo 6 mariage"
+            class="gallery-items"
+            src="./assets/images/gallery/mariage/jakob-owens.jpg"
+            loading="lazy"
             />
           </picture>
           <picture class="gallery-item">
             <source srcset="./assets/images/gallery/portraits/nino-van.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Portrait"
-              alt="photo 7 portrait"
-              class="gallery-items"
+            width="380"
+            height="380"
+            data-gallery-tag="Portrait"
+            alt="photo 7 portrait"
+            class="gallery-items"
               src="./assets/images/gallery/portraits/nino-van.jpg"
               loading="lazy"
-            />
-          </picture>
-          <picture class="gallery-item">
-            <source srcset="./assets/images/gallery/concerts/austin-neill.webp" type="image/webp" />
-            <img
+              />
+            </picture>
+            <picture class="gallery-item">
+              <source srcset="./assets/images/gallery/concerts/austin-neill.webp" type="image/webp" />
+              <img
               width="380"
               height="380"
               data-gallery-tag="Concert"
@@ -235,18 +238,18 @@
               class="gallery-items"
               src="./assets/images/gallery/concerts/austin-neill.jpg"
               loading="lazy"
-            />
-          </picture>
-          <picture class="gallery-item">
-            <source srcset="./assets/images/gallery/entreprise/mateus-campos.webp" type="image/webp" />
+              />
+            </picture>
+            <picture class="gallery-item">
+              <source srcset="./assets/images/gallery/entreprise/mateus-campos.webp" type="image/webp" />
             <img
-              width="380"
-              height="380"
-              data-gallery-tag="Entreprises"
-              alt="photo 9 entreprise"
-              class="gallery-items"
-              src="./assets/images/gallery/entreprise/mateus-campos.jpg"
-              loading="lazy"
+            width="380"
+            height="380"
+            data-gallery-tag="Entreprises"
+            alt="photo 9 entreprise"
+            class="gallery-items"
+            src="./assets/images/gallery/entreprise/mateus-campos.jpg"
+            loading="lazy"
             />
           </picture>
         </div>
@@ -262,8 +265,8 @@
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-    </div>
-    <div id="services">
+    </section>
+    <section id="services">
       <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
@@ -300,8 +303,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="quote">
+    </section>
+    <section class="quote">
       <figure>
         <blockquote>
           <h3 class="quote__text">
@@ -311,13 +314,13 @@
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
-    </div>
-    <div id="contact">
+    </section>
+    <section id="contact">
       <div class="container">
         <div class="form-container">
           <h2>Une question ? Une demande de devis ?</h2>
           <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-          <form action="" method="post">
+          <form action="/" method="post">
             <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
             <label for="email">Email</label>
@@ -331,17 +334,18 @@
           <picture>
             <source srcset="./assets/images/camera.webp" type="image/webp" />
             <img
-              src="./assets/images/camera.png"
-              loading="lazy"
-              alt="Image appareil photo"
-              sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 380px"
+            src="./assets/images/camera.png"
+            loading="lazy"
+            alt="Image appareil photo"
             />
           </picture>
         </div>
       </div>
-    </div>
-	<footer>
-		<p>&copy; 2024 Nina Carducci</p>
+    </section>
+  </main>
+    <footer>
+      <p>&copy; 2024 Nina Carducci</p>
 	  </footer>
   </body>
-</html>
+  </html>
+  
